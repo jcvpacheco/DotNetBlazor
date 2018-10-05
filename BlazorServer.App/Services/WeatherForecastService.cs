@@ -1,10 +1,11 @@
+using BlazorServer.App.Services.Interfaces;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace BlazorServer.App.Services
 {
-    public class WeatherForecastService
+    public class WeatherForecastService : IWeatherForecastService
     {
         private static string[] Summaries = new[]
         {
