@@ -15,7 +15,7 @@ namespace BlazorServer.App.Components
 
         protected override async Task OnInitAsync()
         {
-            Forecasts = await forecastService.GetForecastAsync(DateTime.Now);
+            Forecasts = await GetForecastAsync(DateTime.Now);
         }
 
         public async Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
